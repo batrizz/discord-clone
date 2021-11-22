@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 import {
   Container,
@@ -8,8 +8,8 @@ import {
   Icons,
   MicIcon,
   HeadphoneIcon,
-  SettingsIcon,
-} from './styles';
+  SettingsIcon
+} from './styles'
 
 const UserInfo: React.FC = () => {
   return (
@@ -17,7 +17,7 @@ const UserInfo: React.FC = () => {
       <Profile>
         <Avatar />
         <UserData>
-          <strong>Guilherme Rodz</strong>
+          <strong>Beatriz Nunes</strong>
           <span>#2689</span>
         </UserData>
       </Profile>
@@ -28,7 +28,7 @@ const UserInfo: React.FC = () => {
         <SettingsIcon />
       </Icons>
     </Container>
-  );
-};
+  )
+}
 
-export default UserInfo;
+export default UserInfo

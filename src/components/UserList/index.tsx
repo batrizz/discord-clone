@@ -1,10 +1,10 @@
-import React from 'react';
+import React from 'react'
 
-import { Container, Role, User, Avatar } from './styles';
+import { Container, Role, User, Avatar } from './styles'
 
 interface UserProps {
-  nickname: string;
-  isBot?: boolean;
+  nickname: string
+  isBot?: boolean
 }
 
 const UserRow: React.FC<UserProps> = ({ nickname, isBot }) => {
@@ -16,36 +16,29 @@ const UserRow: React.FC<UserProps> = ({ nickname, isBot }) => {
 
       {isBot && <span>Bot</span>}
     </User>
-  );
-};
+  )
+}
 
 const UserList: React.FC = () => {
   return (
     <Container>
       <Role>Disponível - 1</Role>
-      <UserRow nickname="Guilherme Rodz" />
+      <UserRow nickname="Beatriz Nunes" />
 
-      <Role>Offline - 18</Role>
-      <UserRow nickname="Diego Fernandes" isBot />
-      <UserRow nickname="Fulano" />
-      <UserRow nickname="Fulano" />
-      <UserRow nickname="Fulano" />
-      <UserRow nickname="Fulano" />
-      <UserRow nickname="Fulano" />
-      <UserRow nickname="Fulano" />
-      <UserRow nickname="Fulano" />
-      <UserRow nickname="Fulano" />
-      <UserRow nickname="Fulano" />
-      <UserRow nickname="Fulano" />
-      <UserRow nickname="Fulano" />
-      <UserRow nickname="Fulano" />
-      <UserRow nickname="Fulano" />
-      <UserRow nickname="Fulano" />
-      <UserRow nickname="Fulano" />
-      <UserRow nickname="Fulano" />
-      <UserRow nickname="Fulano" />
+      <Role>Offline - 11</Role>
+      <UserRow nickname="Carlão do mato" isBot />
+      <UserRow nickname="Mage" />
+      <UserRow nickname="Higor" />
+      <UserRow nickname="Tiago" />
+      <UserRow nickname="Diogo" />
+      <UserRow nickname="Rafa" />
+      <UserRow nickname="Lala" />
+      <UserRow nickname="Nat" />
+      <UserRow nickname="Vanessa" />
+      <UserRow nickname="Lucas" />
+      <UserRow nickname="João" />
     </Container>
-  );
-};
+  )
+}
 
-export default UserList;
+export default UserList
